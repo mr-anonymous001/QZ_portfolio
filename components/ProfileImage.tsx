@@ -15,8 +15,8 @@ export default function ProfileImage({ src, alt, width, height }: ProfileImagePr
 
   if (imageError) {
     return (
-      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900">
-        <div className="text-slate-400 dark:text-slate-500 text-center p-4">
+      <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-beige to-cream">
+        <div className="text-olive text-center p-4">
           <div className="text-4xl mb-2">👤</div>
           <div className="text-sm">Profile Image</div>
         </div>

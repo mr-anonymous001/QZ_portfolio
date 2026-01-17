@@ -68,11 +68,9 @@ export interface CVData {
   experience: string;
   thesisSupervision: number;
   ssciPublications: number;
-  citations: string;
   abdc: string;
   abs: string;
   impactFactor: string;
-  hIndex: string;
   i10Index: string;
   bio: string;
   education: Education[];
@@ -99,8 +97,8 @@ export interface CVData {
 }
 
 export const cvData: CVData = {
-  name: "Dr. Qamar Uz Zaman",
-  title: "Ph.D. Management Sciences | Assistant Professor - COMSATS University Islamabad, Sahiwal Campus",
+  name: "Dr. Qamar Uz Zaman (Ph.D | ACFA | ACCA Part Qual.. | Ex-PWC)",
+  title: "Assistant Professor | COMSATS University Islamabad, Sahiwal Campus\nFintech, Regtech, MSB, Crypto KYC AML/CFT Compliance Expert\nPh.D. Management Sciences | Specialization in Finance",
   email: ["qamar@cuisahiwal.edu.pk", "qzmalik@gmail.com"],
   phone: ["+923216301747", "+923326301747"],
   nationality: "Pakistani",
@@ -108,16 +106,14 @@ export const cvData: CVData = {
   orcid: "0000-0002-3964-1572",
   researcherId: "J-3595-2014",
   publons: "1349383",
-  experience: "17 Years",
+  experience: "20 Years",
   thesisSupervision: 12,
   ssciPublications: 16,
-  citations: ">500",
   abdc: "2A*+12A+2B",
   abs: "3star:2+2star:8+1star:6",
   impactFactor: "90.76",
-  hIndex: "12",
   i10Index: "13",
-  bio: "Serving as Assistant Professor of Accounting and Finance, Department of Management Sciences, focal person for Center of Islamic Finance, and member Academic Council at COMSATS University Islamabad (Sahiwal). Have more than 17 years of university teaching experience. I have been teaching both undergraduate and graduate programs. My research interests are Islamic Corporate Finance, Corporate and Financial Criminology, CSR. I have 21 primary and co-authored research publications in SSCI, ESCI and Scopus-indexed peer-reviewed journals. I have served as Head of the Department of Management Sciences. I am also a member Board of Studies and Academic Council of the university. I have supervised and co-supervised seven Master's research dissertations.",
+  bio: "Serving as Assistant Professor of Accounting and Finance, Department of Management Sciences, focal person for Center of Islamic Finance, and member Academic Council at COMSATS University Islamabad (Sahiwal). Have more than 20 years of university teaching experience. I have been teaching both undergraduate and graduate programs. My research interests are Islamic Corporate Finance, Corporate and Financial Criminology, CSR. I have 21 primary and co-authored research publications in SSCI, ESCI and Scopus-indexed peer-reviewed journals. I have served as Head of the Department of Management Sciences. I am also a member Board of Studies and Academic Council of the university. I have supervised and co-supervised seven Master's research dissertations.",
   education: [
     {
       degree: "PhD",
@@ -643,5 +639,5 @@ export const cvData: CVData = {
     { language: "Punjabi", proficiency: "Native Speaker" },
     { language: "English", proficiency: "Superior Listener, Advanced Speaker, Advanced Reading and Writing" }
   ],
-  profileImage: "/images/profile.jpg"
+  profileImage: "/images/Dr. Qamar uz Zaman.JPG"
 };
