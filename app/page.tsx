@@ -47,7 +47,7 @@ export default function Home() {
             </div>
 
             {/* Key Stats */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 mt-6 sm:mt-8">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mt-6 sm:mt-8">
               <Link href="/publications" className="bg-beige/90 rounded-lg p-4 sm:p-6 shadow-md border-2 border-olive/20 hover:border-olive hover:bg-olive hover:text-beige transition-all duration-300 cursor-pointer group">
                 <div className="text-2xl sm:text-3xl font-bold text-olive-dark group-hover:text-beige">{cvData.ssciPublications}</div>
                 <div className="text-xs sm:text-sm text-olive mt-1 group-hover:text-beige/90">SSCI Publications</div>
@@ -60,6 +60,10 @@ export default function Home() {
                 <div className="text-2xl sm:text-3xl font-bold text-olive-dark">{cvData.thesisSupervision}</div>
                 <div className="text-xs sm:text-sm text-olive mt-1">Thesis Supervision</div>
               </div>
+              <Link href="/aml-compliance" className="bg-beige/60 rounded-lg p-4 sm:p-6 shadow-md border-2 border-olive/20 hover:border-olive hover:bg-olive hover:text-beige transition-all duration-300 cursor-pointer group col-span-2 sm:col-span-1">
+                <div className="text-lg sm:text-xl font-bold text-olive-dark group-hover:text-beige">Expertise</div>
+                <div className="text-xs sm:text-sm text-olive mt-1 group-hover:text-beige/90">Accounting, Finance, AML KYC Compliance</div>
+              </Link>
             </div>
 
             {/* Quick Links */}
