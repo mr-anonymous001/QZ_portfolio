@@ -16,8 +16,16 @@ export default function Navigation() {
     { href: '/aml-compliance', label: 'AML/CFT' },
     { href: '/research', label: 'Research' },
     { href: '/publications', label: 'Publications' },
-    { href: '/contact', label: 'Contact' },
   ]
+
+  const handleContactClick = (e: React.MouseEvent) => {
+    e.preventDefault()
+    setIsMenuOpen(false)
+    const footer = document.getElementById('contact')
+    if (footer) {
+      footer.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
 
   return (
     <nav className="sticky top-0 z-50 backdrop-blur-md border-b-2 border-rustblue/50 shadow-xl" style={{ background: 'linear-gradient(90deg, #2D4A5E 0%, #3D5A73 25%, #4A6880 50%, #3D5A73 75%, #2D4A5E 100%)' }}>
@@ -56,6 +64,12 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <button
+              onClick={handleContactClick}
+              className="px-2 xl:px-3 py-2 rounded-md text-sm font-medium transition text-beige hover:bg-olive/50 hover:text-beige-light"
+            >
+              Contact
+            </button>
           </div>
         </div>
 
@@ -76,6 +90,12 @@ export default function Navigation() {
                   {item.label}
                 </Link>
               ))}
+              <button
+                onClick={handleContactClick}
+                className="px-4 py-3 rounded-md text-sm font-medium transition text-beige hover:bg-olive/50 hover:text-beige-light text-left"
+              >
+                Contact
+              </button>
             </div>
           </div>
         )}
