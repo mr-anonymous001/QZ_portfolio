@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { cvData } from '@/data/cv'
-import ProfileImage from '@/components/ProfileImage'
 import Navigation from '@/components/Navigation'
+import ProfileSlideshow from '@/components/ProfileSlideshow'
 
 export default function Home() {
   return (
@@ -11,22 +11,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-20">
         <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8 lg:gap-12">
-          {/* Profile Image */}
+          {/* Profile Slideshow */}
           <div className="flex-shrink-0">
-            <div className="w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64 rounded-full bg-gradient-to-br from-olive to-olive-dark p-1.5 sm:p-2 shadow-xl">
-              <div className="w-full h-full rounded-full bg-beige flex items-center justify-center overflow-hidden">
-                {cvData.profileImage ? (
-                  <ProfileImage
-                    src={cvData.profileImage}
-                    alt={cvData.name}
-                    width={256}
-                    height={256}
-                  />
-                ) : (
-                  <div className="text-olive text-sm text-center p-4">Profile Image</div>
-                )}
-              </div>
-            </div>
+            <ProfileSlideshow />
           </div>
 
           {/* Content */}
